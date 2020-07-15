@@ -1,0 +1,68 @@
+{
+    "env": {
+        "browser": true,
+        "es2020": true
+    },
+    "extends": [
+        "airbnb",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended",
+        "prettier/react"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 11,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "prettier",
+        "eslint-plugin-import-helpers"
+    ],
+    "rules": {
+        "prettier/prettier": "error",
+        "react/prop-types": "off",
+        "no-unused-expressions": "off",
+        "space-before-function-paren": "off",
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+            "ts": "never",
+            "tsx": "never"
+            }
+        ],
+        "@typescript-eslint/no-floating-promises": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "import-helpers/order-imports": [
+            "warn",
+            {
+            "newlinesBetween": "always",
+            "groups": [
+                "module",
+                ["parent", "sibling", "index"]
+            ],
+            "alphabetize": { "order": "asc", "ignoreCase": true }
+            }
+        ],
+        "import/prefer-default-export": "off",
+        "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
+        "react/jsx-props-no-spreading": "off",
+        "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+        "class-methods-use-this": "off"
+    },
+    "settings": {
+        "import/resolver": {
+          "typescript": {}
+        },
+        "react": {
+          "version": "detect"
+        }
+    }
+}
