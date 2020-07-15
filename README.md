@@ -46,4 +46,5 @@ Pull requests are always welcome 😃.
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
 [Diego3G](https://github.com/diego3g/electron-typescript-react)
