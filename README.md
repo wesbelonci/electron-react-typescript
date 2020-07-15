@@ -1,5 +1,6 @@
 ## Electron + TypeScript + React
 Boilerplate for a project using Electron, React and Typescript
+
 Enable Async Await functions
 
 ## Installation
